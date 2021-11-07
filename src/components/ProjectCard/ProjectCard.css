@@ -1,0 +1,34 @@
+.project-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #393939;
+  width: 200px;
+  height: 300px;
+  padding-top: 4%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 2%;
+}
+.project-name-text {
+  color: white;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.project-logo-container {
+}
+.project-tech-container-text {
+  color: #6dc4b7;
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 15px;
+}
+.project-description {
+  margin-top: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
