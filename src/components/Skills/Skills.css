@@ -1,9 +1,13 @@
-.skills-container{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2%;
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
 }
-.skill-image{
-    padding-right:10%;
-    padding-top: 5%;
+.skill-image {
+  padding-right: 5%;
+  padding-top: 5%;
+  transition: all 0.2s ease-in-out;
+}
+.skill-image:hover {
+  transform: scale(1.1);
 }

@@ -15,7 +15,7 @@
 .project-name-text {
   color: white;
   margin-top: 15px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
 }
 .project-logo-container {
@@ -23,12 +23,12 @@
 .project-tech-container-text {
   color: #6dc4b7;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 700;
   margin-top: 15px;
 }
 .project-description {
   margin-top: 20px;
   color: white;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
 }

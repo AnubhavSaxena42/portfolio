@@ -3,7 +3,7 @@ import "./Header.css";
 export default function Header() {
   return (
     <div className="header-container">
-      <div className="logo-container">LOGO</div>
+      <div className="logo-container">ANUBHAV SAXENA</div>
       <div className="links-container">
         <div style={{ color: "#E5E5E5" }}>Home </div>
         <div style={{ color: "#E5E5E5" }}>About </div>

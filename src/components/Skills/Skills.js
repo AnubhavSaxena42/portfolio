@@ -2,6 +2,7 @@ import React from "react";
 import "./Skills.css";
 import html from "../../assets/images/skills/html.png";
 import css from "../../assets/images/skills/css.png";
+import angular from '../../assets/images/skills/angular.png'
 import javascript from "../../assets/images/skills/javascript.png";
 import react from "../../assets/images/skills/react.png";
 import linux from "../../assets/images/skills/linux.png";
@@ -38,6 +39,13 @@ function Skills() {
       <img
         className="skill-image"
         src={react}
+        height="60"
+        width="60"
+        alt="html"
+      />
+       <img
+        className="skill-image"
+        src={angular}
         height="60"
         width="60"
         alt="html"

@@ -100,20 +100,19 @@ const Home = () => {
         <div className="text-box">
           <p
             style={{
-              fontFamily: "poppins",
               color: "#FEAB26",
-              fontWeight: "bold",
-              fontSize: 24,
+              fontWeight: "600",
+              fontSize: 16,
+              letterSpacing:3,
             }}
           >
             HEY! IAM
           </p>
           <h1
             style={{
-              fontFamily: "poppins",
               color: "white",
-              fontWeight: "800",
-              fontSize: 40,
+              fontWeight: "900",
+              fontSize: 50,
             }}
           >
             ANUBHAV SAXENA
