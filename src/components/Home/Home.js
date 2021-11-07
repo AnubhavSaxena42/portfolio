@@ -113,32 +113,33 @@ const Home = () => {
               color: "white",
               fontWeight: "900",
               fontSize: 50,
+              letterSpacing:0.1
             }}
           >
             ANUBHAV SAXENA
           </h1>
-          <span style={{ color: "white", fontWeight: "bold", fontSize: 18 }}>
+          <span style={{ color: "white", fontWeight: "700", fontSize: 28 }}>
             {" "}
             I like
             {count ? (
               <Typist avgTypingDelay={50} onTypingDone={() => setCount(0)}>
-                <span style={{ color: "#FEAB26", fontSize: 18 }}>
+                <span style={{ color: "#FEAB26", fontSize: 26 }}>
                   <u> Cats.</u>
                 </span>
                 <Typist.Backspace count={5} delay={1000} />
-                <span style={{ color: "#FEAB26", fontSize: 18 }}>
+                <span style={{ color: "#FEAB26", fontSize: 26 }}>
                   <u> React Native. </u>
                 </span>
                 <Typist.Backspace count={14} delay={1000} />
-                <span style={{ color: "#FEAB26", fontSize: 18 }}>
+                <span style={{ color: "#FEAB26", fontSize: 26 }}>
                   <u> JavaScript.</u>
                 </span>
                 <Typist.Backspace count={11} delay={1000} />
-                <span style={{ color: "#FEAB26", fontSize: 18 }}>
+                <span style={{ color: "#FEAB26", fontSize: 26 }}>
                   <u> learning New Tech.</u>
                 </span>
                 <Typist.Backspace count={18} delay={1000} />
-                <span style={{ color: "#FEAB26", fontSize: 18 }}>
+                <span style={{ color: "#FEAB26", fontSize: 26 }}>
                   <u> Video games.</u>
                 </span>
               </Typist>
