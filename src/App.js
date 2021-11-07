@@ -6,7 +6,7 @@ import ProjectList from "./components/ProjectListComponent/ProjectList";
 import Contact from "./components/Contact/Contact";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
-import React, { useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 const personalProjects = {
   type: "Personal projects",
   desc: "These are the projects that i build to practice the technologies i use at work in my free time",
@@ -18,12 +18,41 @@ const workProjects = {
   projects: {},
 };
 function App() {
+  useEffect(() => {
+    const handleScroll = () => {};
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const [visibleSection, setVisibleSection] = useState();
+
   const scrollTo = (ele) => {
     ele.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
   };
+
+  const getDimensions = (ele) => {
+    const { height } = ele.getBoundingClientRect();
+    const offsetTop = ele.offsetTop;
+    const offsetBottom = offsetTop + height;
+
+    return {
+      height,
+      offsetTop,
+      offsetBottom,
+    };
+  };
+
+  const handleScroll = () => {
+    const { height: headerHeight } = getDimensions(headerRef.current);
+    const scrollPosition = window.scrollY + headerHeight;
+  };
+
+  const headerRef = useRef(null);
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const resRef = useRef(null);
@@ -33,6 +62,7 @@ function App() {
     <div className="app-container" ref={homeRef}>
       <div className="sticky">
         <Header
+          headerRef={headerRef}
           homeRef={homeRef}
           aboutRef={aboutRef}
           resRef={resRef}
@@ -43,7 +73,7 @@ function App() {
       </div>
       <Home id="Home" homeRef={homeRef} />
       <About id="About" aboutRef={aboutRef} />
-      <Resume id="Resume" resRef={resRef} />
+      <Resume id="Resume" resRef={resRef} scrollto={scrollTo} />
       <ProjectList
         projectRef={projectRef}
         id="Projects"

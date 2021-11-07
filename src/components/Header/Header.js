@@ -7,10 +7,11 @@ export default function Header({
   resRef,
   contactRef,
   projectRef,
+  headerRef,
 }) {
   console.log(homeRef);
   return (
-    <div className="header-container">
+    <div className="header-container" ref={headerRef}>
       <div className="logo-container">ANUBHAV SAXENA</div>
       <div className="links-container">
         <div

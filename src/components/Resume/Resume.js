@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Education from "../Education/Education";
 import Experience from "../Experience/Experience";
 import Skills from "../Skills/Skills";
@@ -43,12 +43,41 @@ const NurtureLabs = {
   timeline: "Jan 2021-Mar 2021",
   pointers: "Mera yashu yashu",
 };
-function Resume({resRef}) {
+function Resume({ resRef, scrollto }) {
+  const eduRef = useRef(null);
+  const expRef = useRef(null);
+  const skillRef = useRef(null);
   return (
     <div className="resume-container" ref={resRef}>
-      <div className="resu-links-container">LINKS</div>
+      <div className="resu-links-container sticky">
+        <div
+          className="resu-link"
+          onClick={() => {
+            scrollto(eduRef.current);
+          }}
+        >
+          Education
+        </div>
+        <div
+          className="resu-link"
+          onClick={() => {
+            scrollto(expRef.current);
+          }}
+        >
+          Experience
+        </div>
+        <div
+          className="resu-link"
+          onClick={() => {
+            scrollto(skillRef.current);
+          }}
+        >
+          Skills
+        </div>
+      </div>
+
       <div className="resu-info-container">
-        <div className="resu-edu-container">
+        <div className="resu-edu-container" ref={eduRef}>
           <div
             style={{
               color: "rgb(255,172,38)",
@@ -63,7 +92,7 @@ function Resume({resRef}) {
           <Education education={intermediate} />
           <Education education={matriculation} />
         </div>
-        <div className="resu-exp-container">
+        <div className="resu-exp-container" ref={expRef}>
           <div
             style={{
               color: "rgb(255,172,38)",
@@ -78,13 +107,12 @@ function Resume({resRef}) {
           <Experience job={AmrawLabs} />
           <Experience job={NurtureLabs} />
         </div>
-        <div className="resu-skills-container">
+        <div className="resu-skills-container" ref={skillRef}>
           <div
             style={{
               color: "rgb(255,172,38)",
               fontWeight: "700",
               fontSize: 40,
-              
             }}
           >
             Skills
