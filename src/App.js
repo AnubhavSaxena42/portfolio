@@ -18,7 +18,7 @@ const workProjects = {
 };
 function App() {
   return (
-    <div>
+    <div className="app-container">
       <Header />
       <Home />
       <About />

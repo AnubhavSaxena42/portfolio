@@ -54,6 +54,7 @@ function Resume() {
               color: "rgb(255,172,38)",
               fontWeight: "700",
               fontSize: 40,
+              paddingBottom: 20,
             }}
           >
             Education
@@ -68,6 +69,7 @@ function Resume() {
               color: "rgb(255,172,38)",
               fontWeight: "700",
               fontSize: 40,
+              paddingBottom: 20,
             }}
           >
             Experience
@@ -77,11 +79,12 @@ function Resume() {
           <Experience job={NurtureLabs} />
         </div>
         <div className="resu-skills-container">
-        <div
+          <div
             style={{
               color: "rgb(255,172,38)",
               fontWeight: "700",
               fontSize: 40,
+              
             }}
           >
             Skills

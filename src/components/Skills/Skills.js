@@ -17,72 +17,72 @@ function Skills() {
       <img
         className="skill-image"
         src={html}
-        height="40"
-        width="40"
+        height="60"
+        width="60"
         alt="html"
       />
       <img
         className="skill-image"
         src={css}
-        height="40"
-        width="40"
+        height="60"
+        width="60"
         alt="html"
       />
       <img
         className="skill-image"
         src={javascript}
-        height="40"
-        width="40"
+        height="60"
+        width="60"
         alt="html"
       />
       <img
         className="skill-image"
         src={react}
-        height="40"
-        width="40"
+        height="60"
+        width="60"
         alt="html"
       />
       <img
         className="skill-image"
         src={linux}
-        height="40"
-        width="40"
+        height="60"
+        width="60"
         alt="html"
       />
       <img
         className="skill-image"
         src={cplusplus}
-        height="40"
-        width="40"
+        height="60"
+        width="60"
         alt="html"
       />
-      <img className="skill-image" src={c} height="40" width="40" alt="html" />
+      <img className="skill-image" src={c} height="60" width="60" alt="html" />
       <img
         className="skill-image"
         src={csharp}
-        height="40"
-        width="40"
+        height="60"
+        width="60"
         alt="html"
       />
       <img
         className="skill-image"
         src={firebase}
-        height="40"
-        width="40"
+        height="60"
+        width="60"
         alt="html"
       />
       <img
         className="skill-image"
         src={java}
-        height="40"
-        width="40"
+        height="60"
+        width="60"
         alt="html"
       />
       <img
         className="skill-image"
         src={mongo}
-        height="40"
-        width="40"
+        height="60"
+        width="60"
         alt="html"
       />
     </div>
