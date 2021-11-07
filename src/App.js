@@ -1,11 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import Home from "./components/Home/Home";
+import "./App.css";
+import Header from "./components/Header/Header";
 function App() {
   return (
-    <div className="App">
+    <div>
+      <Header/>
+      <Home />
+      <div>TEST DIV</div>
+    </div>
+  );
+  /*<div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+       <img src={logo} className="App-logo" alt="logo" /> 
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -19,7 +26,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  );*/
 }
 
 export default App;
