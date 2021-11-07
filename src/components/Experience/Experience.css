@@ -8,3 +8,20 @@
   display: flex;
   flex-direction: column;
 }
+.job-pos-text {
+  font-weight: 700;
+  font-size: 30px;
+  color:white;
+}
+.job-company-text {
+  color:#6DC4B7;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.job-timeline-text {
+  color:#F3A525;
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 10px;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import Education from "../Education/Education";
+import Experience from "../Experience/Experience";
 import "./Resume.css";
 const college = {
   instituteName: "Chandigarh University",
@@ -23,16 +24,54 @@ const matriculation = {
   timeline: "2015-2016",
 };
 
+const Kayan = {
+  position: "React Native Intern",
+  company: "Kayan Healthcare",
+  timeline: "Aug 2021-Present",
+  pointers: "Mera yashu yashu",
+};
+const AmrawLabs = {
+  position: "React Native Intern",
+  company: "Amraw Labs",
+  timeline: "Mar 2021-Aug-2021",
+  pointers: "Mera yashu yashu",
+};
+const NurtureLabs = {
+  position: "React Native Intern",
+  company: "Nurture Labs",
+  timeline: "Jan 2021-Mar 2021",
+  pointers: "Mera yashu yashu",
+};
 function Resume() {
   return (
     <div className="resume-container">
       <div className="resu-links-container">LINKS</div>
       <div className="resu-info-container">
         <div className="resu-edu-container">
-          <div style={{color:'rgb(255,172,38)',fontWeight:'700',fontSize:40}}>Education</div>
+          <div
+            style={{
+              color: "rgb(255,172,38)",
+              fontWeight: "700",
+              fontSize: 40,
+            }}
+          >
+            Education
+          </div>
           <Education education={college} />
           <Education education={intermediate} />
           <Education education={matriculation} />
+          <div
+            style={{
+              color: "rgb(255,172,38)",
+              fontWeight: "700",
+              fontSize: 40,
+            }}
+          >
+            Experience
+          </div>
+          <Experience job={Kayan} />
+          <Experience job={AmrawLabs} />
+          <Experience job={NurtureLabs} />
         </div>
       </div>
     </div>

@@ -5,9 +5,9 @@ function Experience({ job }) {
     <div className="experience-container">
       <div className="exp-icon-container">Briefcase Icon</div>
       <div className="exp-info-container">
-        <div>{job.position}</div>
-        <div>{job.company}</div>
-        <div>{job.timeline}</div>
+        <div className="job-pos-text">{job.position}</div>
+        <div className="job-company-text">{job.company}</div>
+        <div className="job-timeline-text">{job.timeline}</div>
         <div>{job.pointers}</div>
       </div>
     </div>
