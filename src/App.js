@@ -6,6 +6,7 @@ import ProjectList from "./components/ProjectListComponent/ProjectList";
 import Contact from "./components/Contact/Contact";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
+import React, { useRef } from "react";
 const personalProjects = {
   type: "Personal projects",
   desc: "These are the projects that i build to practice the technologies i use at work in my free time",
@@ -17,16 +18,47 @@ const workProjects = {
   projects: {},
 };
 function App() {
+  const scrollTo = (ele) => {
+    ele.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const resRef = useRef(null);
+  const projectRef = useRef(null);
+  const contactRef = useRef(null);
   return (
-    <div className="app-container">
-      <Header />
-      <Home />
-      <About />
-      <Resume />
-      <ProjectList projectTypeInfo={personalProjects} />
+    <div className="app-container" ref={homeRef}>
+      <div className="sticky">
+        <Header
+          homeRef={homeRef}
+          aboutRef={aboutRef}
+          resRef={resRef}
+          projectRef={projectRef}
+          contactRef={contactRef}
+          scrollto={scrollTo}
+        />
+      </div>
+      <Home id="Home" homeRef={homeRef} />
+      <About id="About" aboutRef={aboutRef} />
+      <Resume id="Resume" resRef={resRef} />
+      <ProjectList
+        projectRef={projectRef}
+        id="Projects"
+        projectTypeInfo={personalProjects}
+      />
       <ProjectList projectTypeInfo={workProjects} />
-      <Contact />
-      <Footer />
+      <Contact contactRef={contactRef} id="Contact" />
+      <Footer
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+        resRef={resRef}
+        projectRef={projectRef}
+        contactRef={contactRef}
+        scrollto={scrollTo}
+      />
     </div>
   );
 }

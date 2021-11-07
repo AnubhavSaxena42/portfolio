@@ -55,6 +55,10 @@
   font-weight: 300;
   margin-top:4px;
 }
+.footer-link:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
 .footer-contact-container {
   display: flex;
   flex-direction: column;

@@ -1,9 +1,9 @@
 import React from "react";
 import "./About.css";
 import image from "../../assets/images/dibyachan.jpg";
-function About() {
+function About({aboutRef}) {
   return (
-    <div className="about-container">
+    <div className="about-container" ref={aboutRef}>
       <div className="image-container">
         <img src={image} alt="dibya-chan  ^-^" width="100%" height="100%" />
       </div>

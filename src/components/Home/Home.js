@@ -80,7 +80,7 @@ const particlesOptions = {
   detectRetina: true,
 };
 
-const Home = () => {
+const Home = ({ homeRef }) => {
   const [count, setCount] = useState(1);
 
   useEffect(() => {
@@ -96,14 +96,14 @@ const Home = () => {
   };
   return (
     <div id="wrapper">
-      <div className="content">
+      <div className="content" >
         <div className="text-box">
           <p
             style={{
               color: "#FEAB26",
               fontWeight: "600",
               fontSize: 16,
-              letterSpacing:3,
+              letterSpacing: 3,
             }}
           >
             HEY! IAM
@@ -113,7 +113,7 @@ const Home = () => {
               color: "white",
               fontWeight: "900",
               fontSize: 50,
-              letterSpacing:0.1
+              letterSpacing: 0.1,
             }}
           >
             ANUBHAV SAXENA

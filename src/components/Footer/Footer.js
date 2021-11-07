@@ -8,7 +8,14 @@ import {
 } from "react-icons/bs";
 import { RiArrowRightLine } from "react-icons/ri";
 import "./Footer.css";
-function Footer() {
+function Footer({
+  homeRef,
+  aboutRef,
+  resRef,
+  projectRef,
+  contactRef,
+  scrollto,
+}) {
   return (
     <div className="footer-container">
       <div className="footer-about-container">
@@ -33,31 +40,58 @@ function Footer() {
       </div>
       <div className="footer-links-container">
         <div className="footer-links-heading">Links</div>
-        <div className="footer-link">
+        <div
+          className="footer-link"
+          onClick={() => {
+            scrollto(homeRef.current);
+            console.log(homeRef.current);
+          }}
+        >
           <div style={{ marginRight: 5, marginTop: 4 }}>
             <RiArrowRightLine size={20} color={"white"} />
           </div>
           Home
         </div>
-        <div className="footer-link">
+        <div
+          className="footer-link"
+          onClick={() => {
+            scrollto(aboutRef.current);
+            console.log(aboutRef.current);
+          }}
+        >
           <div style={{ marginRight: 5, marginTop: 4 }}>
             <RiArrowRightLine size={20} color={"white"} />
           </div>
           About
         </div>
-        <div className="footer-link">
+        <div
+          className="footer-link"
+          onClick={() => {
+            scrollto(resRef.current);
+          }}
+        >
           <div style={{ marginRight: 5, marginTop: 4 }}>
             <RiArrowRightLine size={20} color={"white"} />
           </div>
           Resume
         </div>
-        <div className="footer-link">
+        <div
+          className="footer-link"
+          onClick={() => {
+            scrollto(projectRef.current);
+          }}
+        >
           <div style={{ marginRight: 5, marginTop: 4 }}>
             <RiArrowRightLine size={20} color={"white"} />
           </div>
           Projects
         </div>
-        <div className="footer-link">
+        <div
+          className="footer-link"
+          onClick={() => {
+            scrollto(contactRef.current);
+          }}
+        >
           <div style={{ marginRight: 5, marginTop: 4 }}>
             <RiArrowRightLine size={20} color={"white"} />
           </div>

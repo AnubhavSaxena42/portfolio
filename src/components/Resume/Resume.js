@@ -43,9 +43,9 @@ const NurtureLabs = {
   timeline: "Jan 2021-Mar 2021",
   pointers: "Mera yashu yashu",
 };
-function Resume() {
+function Resume({resRef}) {
   return (
-    <div className="resume-container">
+    <div className="resume-container" ref={resRef}>
       <div className="resu-links-container">LINKS</div>
       <div className="resu-info-container">
         <div className="resu-edu-container">
