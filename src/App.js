@@ -5,6 +5,7 @@ import Resume from "./components/Resume/Resume";
 import ProjectList from "./components/ProjectListComponent/ProjectList";
 import Contact from "./components/Contact/Contact";
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 const personalProjects = {
   type: "Personal projects",
   desc: "These are the projects that i build to practice the technologies i use at work in my free time",
@@ -25,6 +26,7 @@ function App() {
       <ProjectList projectTypeInfo={personalProjects} />
       <ProjectList projectTypeInfo={workProjects} />
       <Contact />
+      <Footer />
     </div>
   );
 }
