@@ -1,0 +1,14 @@
+.about-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #242424;
+  padding: 1em;
+}
+.image-container {
+  width: 50%;
+  padding: 2%;
+}
+.info-container {
+
+  margin-top: 5%;
+}
