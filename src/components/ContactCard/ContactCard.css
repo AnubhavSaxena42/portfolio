@@ -1,0 +1,25 @@
+.contact-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 4%;
+  width: 200px;
+  margin-left: 30px;
+}
+.contact-image-container {
+    margin-bottom: 10%;
+}
+.contact-type-heading {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+.contact-value-text {
+  color: #feab26;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+}

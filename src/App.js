@@ -3,6 +3,7 @@ import About from "./components/About/About";
 import Header from "./components/Header/Header";
 import Resume from "./components/Resume/Resume";
 import ProjectList from "./components/ProjectListComponent/ProjectList";
+import Contact from "./components/Contact/Contact";
 import "./App.css";
 const personalProjects = {
   type: "Personal projects",
@@ -23,6 +24,7 @@ function App() {
       <Resume />
       <ProjectList projectTypeInfo={personalProjects} />
       <ProjectList projectTypeInfo={workProjects} />
+      <Contact />
     </div>
   );
 }

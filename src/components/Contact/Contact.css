@@ -1,0 +1,19 @@
+.contact-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    background-color: #242424;
+}
+.contact-heading-text{
+    color:white;
+    font-size: 36px;
+    font-weight: 700;
+}
+.contact-cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
