@@ -1,0 +1,17 @@
+.education-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 20px;
+  flex: 1;
+}
+.icon-container {
+  display: flex;
+  padding-top: 20;
+}
+.edu-info-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  flex-grow: 1;
+}

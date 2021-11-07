@@ -1,0 +1,10 @@
+.experience-container {
+  display: flex;
+}
+.exp-icon-container {
+  display: flex;
+}
+.exp-info-container {
+  display: flex;
+  flex-direction: column;
+}
