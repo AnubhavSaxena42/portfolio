@@ -1,0 +1,9 @@
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+.skill-image{
+    padding-right:10%;
+    padding-top: 5%;
+}

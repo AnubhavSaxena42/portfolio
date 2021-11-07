@@ -1,6 +1,7 @@
 import React from "react";
 import Education from "../Education/Education";
 import Experience from "../Experience/Experience";
+import Skills from "../Skills/Skills";
 import "./Resume.css";
 const college = {
   instituteName: "Chandigarh University",
@@ -60,6 +61,8 @@ function Resume() {
           <Education education={college} />
           <Education education={intermediate} />
           <Education education={matriculation} />
+        </div>
+        <div className="resu-exp-container">
           <div
             style={{
               color: "rgb(255,172,38)",
@@ -72,6 +75,18 @@ function Resume() {
           <Experience job={Kayan} />
           <Experience job={AmrawLabs} />
           <Experience job={NurtureLabs} />
+        </div>
+        <div className="resu-skills-container">
+        <div
+            style={{
+              color: "rgb(255,172,38)",
+              fontWeight: "700",
+              fontSize: 40,
+            }}
+          >
+            Skills
+          </div>
+          <Skills />
         </div>
       </div>
     </div>

@@ -1,5 +1,7 @@
 .experience-container {
   display: flex;
+  border-bottom: 1px solid rgb(116, 114, 114);
+  margin-bottom: 40px;
 }
 .exp-icon-container {
   display: flex;
