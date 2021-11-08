@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import image from "../../assets/images/dibyachan.png";
+import image from "../../assets/images/dibyachan.jpg";
 function About({aboutRef}) {
   return (
     <div className="about-container" ref={aboutRef}>
@@ -8,7 +8,7 @@ function About({aboutRef}) {
         <img src={image} alt="dibya-chan  ^-^" width="100%" height="100%" />
       </div>
       <div className="info-container">
-        <div style={{ fontSize: 50, color: "white", fontWeight: "700" }}>
+        <div className="about-text">
           About Me
         </div>
         <div

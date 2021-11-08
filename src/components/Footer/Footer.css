@@ -79,3 +79,20 @@
   font-weight: 300;
   margin-top: 4px;
 }
+@media screen and (max-width: 500px) {
+  .footer-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 8%;
+  }
+  .footer-about-container{
+    margin-bottom: 3%;
+  }
+  .footer-links-container{
+    margin-bottom: 3%;
+  }
+  .footer-contact-container{
+    margin-bottom: 5%;
+  }
+}

@@ -9,6 +9,18 @@
   padding: 2%;
 }
 .info-container {
-
   margin-top: 5%;
+}
+.about-text {
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+}
+@media screen and (max-width: 500px) {
+  .image-container {
+    display: none;
+  }
+  .about-text{
+    text-align: center;
+  }
 }

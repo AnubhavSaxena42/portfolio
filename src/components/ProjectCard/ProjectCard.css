@@ -49,3 +49,8 @@
 #icon:hover{
   color:#f3a525
 }
+@media screen and (max-width: 500px) {
+  .project-card-container{
+    padding-top: 15%;
+  }
+}

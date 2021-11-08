@@ -11,14 +11,14 @@
   width: 30%;
   padding-left: 5%;
 }
-.resu-link{
-  color:#6EC5B8;
+.resu-link {
+  color: #6ec5b8;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 2px;
 }
-.resu-link:hover{
-  color:#f3a525;
+.resu-link:hover {
+  color: #f3a525;
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -29,12 +29,12 @@
   flex: 1;
 }
 .resu-edu-container {
-    padding-top: 10%;
-}
-.resu-exp-container{
   padding-top: 10%;
 }
-.resu-skills-container{
+.resu-exp-container {
+  padding-top: 10%;
+}
+.resu-skills-container {
   padding-top: 10%;
 }
 .sticky {
@@ -43,4 +43,23 @@
   left: 10;
   right: 0;
   z-index: -100;
+}
+.resu-text {
+  color: rgb(255, 172, 38);
+  font-weight: 700;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 500px) {
+  .resu-links-container {
+    display: none;
+  }
+  .resume-container {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 4%;
+  }
+  .resu-text {
+    text-align: center;
+  }
 }

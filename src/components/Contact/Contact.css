@@ -18,3 +18,9 @@
     justify-content: space-evenly;
     align-items: center;
 }
+@media screen and (max-width: 500px) {
+    .contact-cards-container{
+      flex-direction: column;
+      padding:5%
+    }
+  }
