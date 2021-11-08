@@ -23,3 +23,8 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 500px) {
+  .project-list-container{
+    padding-bottom: 5%;
+  }
+}
