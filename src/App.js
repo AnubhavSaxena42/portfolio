@@ -6,9 +6,9 @@ import ProjectList from "./components/ProjectListComponent/ProjectList";
 import Contact from "./components/Contact/Contact";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
-import React, { useState, useRef, useEffect } from "react";
-import Project from "./components/Project/Project";
-import { personalProjects,workProjects } from "./data/data";
+import React, { useRef, useEffect } from "react";
+
+import { personalProjects, workProjects } from "./data/data";
 function App() {
   useEffect(() => {
     const handleScroll = () => {};
@@ -18,30 +18,12 @@ function App() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const [visibleSection, setVisibleSection] = useState();
 
   const scrollTo = (ele) => {
     ele.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
-  };
-
-  const getDimensions = (ele) => {
-    const { height } = ele.getBoundingClientRect();
-    const offsetTop = ele.offsetTop;
-    const offsetBottom = offsetTop + height;
-
-    return {
-      height,
-      offsetTop,
-      offsetBottom,
-    };
-  };
-
-  const handleScroll = () => {
-    const { height: headerHeight } = getDimensions(headerRef.current);
-    const scrollPosition = window.scrollY + headerHeight;
   };
 
   const headerRef = useRef(null);
@@ -67,7 +49,7 @@ function App() {
       <About id="About" aboutRef={aboutRef} />
       <Resume id="Resume" resRef={resRef} scrollto={scrollTo} />
       <ProjectList projectRef={projectRef} projectObj={workProjects} />
-      <ProjectList  projectObj={personalProjects} />
+      <ProjectList projectObj={personalProjects} />
       <Contact contactRef={contactRef} id="Contact" />
       <Footer
         homeRef={homeRef}
