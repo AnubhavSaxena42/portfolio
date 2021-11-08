@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import image from "../../assets/images/dibyachan.jpg";
+import image from "../../assets/images/dp.jpg";
 function About({aboutRef}) {
   return (
     <div className="about-container" ref={aboutRef}>
