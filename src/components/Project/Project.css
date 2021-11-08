@@ -75,3 +75,8 @@
 .project-screen-container {
   margin-left: 2%;
 }
+.skill-image {
+  padding-right: 5%;
+  padding-top: 5%;
+  transition: all 0.2s ease-in-out;
+}

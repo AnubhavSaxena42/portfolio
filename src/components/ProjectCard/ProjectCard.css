@@ -7,22 +7,38 @@
   width: 200px;
   height: 300px;
   padding-top: 4%;
-  padding-bottom: 5%;
+  padding-bottom: 4%;
   padding-left: 5%;
   padding-right: 5%;
-  margin-top: 2%;
+  margin-top: 4%;
+  transition: all 0.2s ease-in-out;
+}
+.project-card-container:hover {
+  cursor: pointer;
+  background-color: #f3a525;
+  transform: scale(1.1);
+}
+.project-card-container:hover .project-name-text {
+  color: black;
+}
+.project-card-container:hover .project-tech-container-text {
+  color: black;
+}
+.project-card-container:hover .project-description {
+  color: black;
 }
 .project-name-text {
   color: white;
   margin-top: 15px;
   font-size: 14px;
+  letter-spacing: 2px;
   font-weight: 300;
 }
 .project-logo-container {
 }
 .project-tech-container-text {
   color: #6dc4b7;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 700;
   margin-top: 15px;
 }
@@ -31,4 +47,7 @@
   color: white;
   font-size: 14px;
   font-weight: 300;
+}
+#icon:hover{
+  color:#f3a525
 }

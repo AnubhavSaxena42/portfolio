@@ -8,16 +8,7 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import React, { useState, useRef, useEffect } from "react";
 import Project from "./components/Project/Project";
-const personalProjects = {
-  type: "Personal projects",
-  desc: "These are the projects that i build to practice the technologies i use at work in my free time",
-  projects: {},
-};
-const workProjects = {
-  type: "Work projects",
-  desc: "These are the projects that i have build over the course of my working experience in the industry",
-  projects: {},
-};
+import { personalProjects,workProjects } from "./data/data";
 function App() {
   useEffect(() => {
     const handleScroll = () => {};
@@ -61,8 +52,7 @@ function App() {
   const contactRef = useRef(null);
   return (
     <div className="app-container" ref={homeRef}>
-      <Project />
-      {/*  <div className="sticky">
+      <div className="sticky">
         <Header
           headerRef={headerRef}
           homeRef={homeRef}
@@ -76,12 +66,8 @@ function App() {
       <Home id="Home" homeRef={homeRef} />
       <About id="About" aboutRef={aboutRef} />
       <Resume id="Resume" resRef={resRef} scrollto={scrollTo} />
-      <ProjectList
-        projectRef={projectRef}
-        id="Projects"
-        projectTypeInfo={personalProjects}
-      />
-      <ProjectList projectTypeInfo={workProjects} />
+      <ProjectList projectRef={projectRef} projectObj={workProjects} />
+      <ProjectList  projectObj={personalProjects} />
       <Contact contactRef={contactRef} id="Contact" />
       <Footer
         homeRef={homeRef}
@@ -91,8 +77,6 @@ function App() {
         contactRef={contactRef}
         scrollto={scrollTo}
       />
-    </div>
-  ); */}
     </div>
   );
 }
