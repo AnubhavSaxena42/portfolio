@@ -4,10 +4,11 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 20px;
+  padding: 50px;
   margin-top: 4%;
   width: 200px;
-  margin-left: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .contact-image-container {
     margin-bottom: 10%;

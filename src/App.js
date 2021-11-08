@@ -7,6 +7,7 @@ import Contact from "./components/Contact/Contact";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import React, { useState, useRef, useEffect } from "react";
+import Project from "./components/Project/Project";
 const personalProjects = {
   type: "Personal projects",
   desc: "These are the projects that i build to practice the technologies i use at work in my free time",
@@ -60,7 +61,8 @@ function App() {
   const contactRef = useRef(null);
   return (
     <div className="app-container" ref={homeRef}>
-      <div className="sticky">
+      <Project />
+      {/*  <div className="sticky">
         <Header
           headerRef={headerRef}
           homeRef={homeRef}
@@ -89,6 +91,8 @@ function App() {
         contactRef={contactRef}
         scrollto={scrollTo}
       />
+    </div>
+  ); */}
     </div>
   );
 }
