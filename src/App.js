@@ -8,7 +8,7 @@ import Contact from "./components/Contact/Contact";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import React, { useRef, useEffect } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import { personalProjects, workProjects } from "./data/data";
 function App() {
