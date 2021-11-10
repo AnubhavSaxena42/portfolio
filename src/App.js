@@ -3,13 +3,24 @@ import About from "./components/About/About";
 import Header from "./components/Header/Header";
 import Resume from "./components/Resume/Resume";
 import ProjectList from "./components/ProjectListComponent/ProjectList";
+import Project from './components/Project/Project'
 import Contact from "./components/Contact/Contact";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import React, { useRef, useEffect } from "react";
+import { Routes, Route, Link } from "react-router-dom";
 
 import { personalProjects, workProjects } from "./data/data";
 function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<MainApp />} />
+      <Route path="projects/:projectId" element={<Project/>} />
+    </Routes>
+  );
+}
+
+const MainApp = () => {
   useEffect(() => {
     const handleScroll = () => {};
 
@@ -61,6 +72,6 @@ function App() {
       />
     </div>
   );
-}
+};
 
 export default App;

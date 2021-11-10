@@ -1,12 +1,24 @@
 import React from "react";
 import { IoMdArrowRoundBack } from "react-icons/io";
+import { useParams, useNavigate } from "react-router";
+import { allprojects } from "../../data/data";
 import "./Project.css";
-function Project({ project }) {
+function Project(props) {
+  const { projectId } = useParams();
+  const navigate = useNavigate();
+  const project = allprojects.find((item) => item.id === projectId);
+  console.log(project);
+  console.log(projectId);
   return (
     <div className="project-page">
       <div className="project-container">
         <div className="project-header">
-          <div className="project-header-icon">
+          <div
+            className="project-header-icon"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
             <IoMdArrowRoundBack size={30} color={"white"} /> Back
           </div>
           <div className="project-header-heading">{project.name}</div>
