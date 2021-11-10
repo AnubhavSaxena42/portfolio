@@ -16,7 +16,7 @@
 .project-card-container:hover {
   cursor: pointer;
   background-color: #f3a525;
-  transform: scale(1.1);
+ 
 }
 .project-card-container:hover .project-name-text {
   color: black;

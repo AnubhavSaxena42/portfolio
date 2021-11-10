@@ -28,13 +28,32 @@ function Footer({
         </div>
         <div className="footer-social-icons-container">
           <div style={{ marginRight: 10 }}>
-            <BsGithub size={30} color={"white"} />
+            <a
+              href="https://github.com/AnubhavSaxena42"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <BsGithub size={30} color={"white"} />
+            </a>
           </div>
           <div style={{ marginRight: 10 }}>
-            <BsLinkedin size={30} color={"white"} />
+            <a
+              href="https://www.linkedin.com/in/anubhav-s-71b687114/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              {" "}
+              <BsLinkedin size={30} color={"white"} />
+            </a>
           </div>
           <div style={{ marginRight: 10 }}>
-            <BsTwitter size={30} color={"white"} />
+            <a
+              href="https://twitter.com/Anniikun"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <BsTwitter size={30} color={"white"} />
+            </a>
           </div>
         </div>
       </div>
