@@ -25,7 +25,7 @@ import { IoMdRestaurant } from "react-icons/io";
 import { RiMentalHealthFill } from "react-icons/ri";
 export const personalProjects = {
   type: "Personal projects",
-  desc: "These are the projects that i build to practice the technologies i use at work in my free time",
+  desc: "",
   projects: [
     {
       id: "yt",
@@ -34,7 +34,7 @@ export const personalProjects = {
       icon: () => <BsYoutube color={"white"} size={40} />,
       tags: "React Native.Amplify.GraphQL",
       description:
-        "This is a clone of the youtube feed which enables authentication as well as viewing of videos by other users",
+        "Youtube Feed clone where users can watch videos posted by other users with features such as authentication and likes/dislikes implemented",
       skills: [react, expo, typescript, amplify, graphql],
       screens: [yt1, yt2],
     },
@@ -45,7 +45,7 @@ export const personalProjects = {
       icon: () => <BsSpotify color={"white"} size={40} />,
       tags: "React Native.Amplify.GraphQL",
       description:
-        "This is a clone of the spotify UI which enables authentication as well as browsing playlists and playing songs",
+        "Users can scroll through a feed of albums divided by different categories and listen to their own playlists and favourite songs",
       skills: [react, expo, typescript, amplify, graphql, appsync],
       screens: [sp1],
     },
@@ -56,7 +56,7 @@ export const personalProjects = {
       type: "Personal",
       icon: () => <FaTiktok color={"white"} size={40} />,
       description:
-        "This is a clone of the Tiktok UI which enables authentication as well as viewing tiktoks posted by others",
+        "Fullscreen video feed where users can browse tiktoks posted by other users or record and post their own",
       skills: [react, expo, javascript, amplify, graphql, appsync],
       screens: [tt1, tt2],
     },
@@ -67,15 +67,15 @@ export const personalProjects = {
       type: "Personal",
       icon: () => <BsTwitter color={"white"} size={40} />,
       description:
-        "This is a clone of the Youtube UI which enables authentication as well as viewing tweets by other users",
+        "Twitter app clone where users can tweet as well as interact with tweets by other users, features such as twitter fleets also implemented",
       skills: [react, expo, typescript, amplify, graphql, appsync],
       screens: [tw1, tw2],
     },
   ],
 };
 export const workProjects = {
-  type: "Work projects",
-  desc: "These are the projects that i have build over the course of my working experience in the industry",
+  type: "Professional projects",
+  desc: "",
   projects: [
     {
       id: "ka",
@@ -106,7 +106,7 @@ export const workProjects = {
       icon: () => <IoMdRestaurant color={"white"} size={40} />,
       tags: "Angular.Ionic.MySQL",
       description:
-        "An app in which a user can order food or dine in at the restaurant by scanning qr codes on the table ",
+        "An app in which a user can order food or dine in at the restaurant by scanning QR codes on the table ",
       skills: [angular, ionic, mysql],
       screens: [yt1, yt2],
     },
@@ -116,7 +116,7 @@ export const workProjects = {
       type: "Work",
       icon: () => <BsCode color={"white"} size={40} />,
       tags: "React.Java.C#",
-      description: "A no-code app used to create MVP for mobile applications",
+      description: "A no-code app which allows users to create mobile app using drag and drop widgets",
       skills: [react, netcore, csharp],
       screens: [yt1, yt2],
     },
@@ -163,7 +163,7 @@ export const allprojects = [
     type: "Work",
     icon: () => <BsCode color={"white"} size={40} />,
     tags: "React.Java.C#",
-    description: "A no-code app used to create MVP for mobile applications",
+    description: "A no-code app which allows users to create mobile app using drag and drop widgets",
     skills: [react, netcore, csharp],
     screens: [yt1, yt2],
   },
