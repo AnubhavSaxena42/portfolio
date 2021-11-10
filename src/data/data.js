@@ -79,7 +79,7 @@ export const workProjects = {
   projects: [
     {
       id: "ka",
-      name: "KAYAN HEALTHCARE",
+      name: "KAYAN",
       type: "Work",
       icon: () => <GiHealthNormal color={"white"} size={40} />,
       tags: "React Native.NET CORE.Firebase",
@@ -90,7 +90,7 @@ export const workProjects = {
     },
     {
       id: "ra",
-      name: "RAYNA HEALTHCARE",
+      name: "RAYNA",
       type: "Work",
       icon: () => <RiMentalHealthFill color={"white"} size={40} />,
       tags: "React Native.NET CORE.Firebase",

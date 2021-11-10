@@ -136,7 +136,7 @@ const Home = ({ homeRef }) => {
                 </span>
                 <Typist.Backspace count={11} delay={1000} />
                 <span style={{ color: "#FEAB26", fontSize: 26 }}>
-                  <u> learning New Tech.</u>
+                  <u> Learning New Tech.</u>
                 </span>
                 <Typist.Backspace count={18} delay={1000} />
                 <span style={{ color: "#FEAB26", fontSize: 26 }}>

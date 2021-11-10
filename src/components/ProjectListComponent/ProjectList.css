@@ -16,7 +16,11 @@
   font-size: 22px;
   margin-top: 2%;
   margin-left: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 2%; 
+  padding: 3%;
+}
+.info-text{
+  justify-content:center;
 }
 .project-cards-container {
   display: flex;

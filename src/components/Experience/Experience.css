@@ -1,6 +1,6 @@
 .experience-container {
   display: flex;
-  border-bottom: 1px solid rgb(116, 114, 114);
+  border-bottom: 1px solid rgb(116, 114, 114,0.2);
   margin-bottom: 40px;
 }
 .exp-icon-container {
@@ -14,18 +14,18 @@
 }
 .job-pos-text {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 28px;
   color:white;
 }
 .job-company-text {
   color:#6DC4B7;
   margin-top: 20px;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 23px;
 }
 .job-timeline-text {
   color:#F3A525;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 21px;
   margin-top: 10px;
 }

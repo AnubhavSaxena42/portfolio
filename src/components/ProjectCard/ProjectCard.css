@@ -30,20 +30,20 @@
 .project-name-text {
   color: white;
   margin-top: 15px;
-  font-size: 14px;
+  font-size: 0.8em;
   letter-spacing: 2px;
   font-weight: 300;
 }
 .project-tech-container-text {
   color: #6dc4b7;
-  font-size: 12px;
+  font-size: 0.7em;
   font-weight: 700;
   margin-top: 15px;
 }
 .project-description {
   margin-top: 20px;
   color: white;
-  font-size: 14px;
+  font-size: 0.8em;
   font-weight: 300;
 }
 #icon:hover{
@@ -51,6 +51,12 @@
 }
 @media screen and (max-width: 500px) {
   .project-card-container{
-    padding-top: 15%;
+    padding: 4%;
+    padding-bottom: 2%;
+    margin-bottom: 0.5%;
+    width:38%;
+  }
+  .project-tech-container-text{
+    font-weight: 500;
   }
 }

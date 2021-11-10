@@ -26,22 +26,22 @@ const matriculation = {
 };
 
 const Kayan = {
-  position: "React Native Intern",
+  position: "Frontend Development / Intern",
   company: "Kayan Healthcare",
   timeline: "Aug 2021-Present",
-  pointers: "Mera yashu yashu",
+  pointers: "",
 };
 const AmrawLabs = {
-  position: "React Native Intern",
+  position: "Frontend React Native Dev / Intern",
   company: "Amraw Labs",
   timeline: "Mar 2021-Aug-2021",
-  pointers: "Mera yashu yashu",
+  pointers: "",
 };
 const NurtureLabs = {
-  position: "React Native Intern",
+  position: "Django Backend Developer / Intern",
   company: "Nurture Labs",
   timeline: "Jan 2021-Mar 2021",
-  pointers: "Mera yashu yashu",
+  pointers: "",
 };
 function Resume({ resRef, scrollto }) {
   const eduRef = useRef(null);

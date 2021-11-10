@@ -5,13 +5,16 @@
   padding: 1em;
 }
 .image-container {
-  width: 50%;
+  
+  width: 100%;
   padding: 2%;
 }
 .info-container {
   margin-top: 5%;
+  padding:3%;
 }
 .about-text {
+  text-align: center;
   font-size: 50px;
   color: white;
   font-weight: 700;
@@ -22,5 +25,8 @@
   }
   .about-text{
     text-align: center;
+  }
+  .about-container{
+    padding: none;
   }
 }
