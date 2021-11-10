@@ -1,17 +1,16 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./ProjectCard.css";
 
 function ProjectCard({ project }) {
   const Icon = project.icon;
-  const navigate = useNavigate();
-  const navigateToProject = () => {
+  //const navigate = useNavigate();
+  /*const navigateToProject = () => {
     navigate(`/projects/${project.id}`, {
       state: {
         project: project,
       }
     });
-  };
+  };*/
   return (
     <div className="project-card-container" >
       <div className="project-logo-container">
