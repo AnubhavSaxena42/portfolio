@@ -79,20 +79,20 @@ function Skills() {
         width="60"
         alt="html"
       />
-      <img
+      {/*<img
         className="skill-image"
         src={java}
         height="60"
         width="60"
         alt="html"
-      />
-      <img
+      />*/}
+     {/* <img
         className="skill-image"
         src={mongo}
         height="60"
         width="60"
         alt="html"
-      />
+     /> */}
     </div>
   );
 }
