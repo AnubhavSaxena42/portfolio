@@ -10,8 +10,6 @@ import cplusplus from "../../assets/images/skills/cplusplus.png";
 import c from "../../assets/images/skills/c.png";
 import csharp from "../../assets/images/skills/csharp.png";
 import firebase from "../../assets/images/skills/firebase.png";
-import java from "../../assets/images/skills/java.png";
-import mongo from "../../assets/images/skills/mongo.png";
 function Skills() {
   return (
     <div className="skills-container">
